@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Decodificador de Texto - Challenge ONE</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/teste-de-segurança.svg">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Space+Mono&display=swap"
+        rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <div class="header">
+                    <img class="logo" src="./assets/img/alura.svg">
+                </a>
+            </div>  
+        </div>
+    </header>
+    <main>
+        <article class="container">
+            <section class="left" id="left">
+                <textarea class="inputtextarea" id="textInput" placeholder="Digite o texto aqui" autofocus></textarea>
+                <div class="content_buttons">
+                    <span class="info">
+                        <img src="./assets/img/exclamação.svg" alt="aviso" />
+                        Apenas letras minúsculas sem acentos
+                    </span>
+                    <div class="buttons">
+                        <button id="button__encrypt" class="button__encrypt">Criptografar</button>
+                        <button id="button__decrypt" class="button__decrypt">Descriptografar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="right" id="right">
+                <img id="doll" class="doll" src="./assets/img/boneca.svg" alt="Nenhuma mensagem encontrada. Digite o texto que deseja encriptar ou descriptar.">
+                <textarea id="textFinal" class="textFinal" placeholder="Nenhuma mensagem encontrada"></textarea>
+                <p id="textInfo" class="info">Digite o texto que deseja criptografar ou descriptografar.</p>
+                <button class="button__copy bn_hide" id="button__copy">Copiar</button>
+            </section>
+        </article>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
